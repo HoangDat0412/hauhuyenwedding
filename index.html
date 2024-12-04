@@ -1869,7 +1869,6 @@
 
     #HEADLINE3 {
       top: 20px;
-      left: 130px;
     }
 
     #HEADLINE3>.ladi-headline {
@@ -3369,7 +3368,7 @@
 
     #GROUP14 {
       top: 70px;
-      left: 19.5px;
+      /* left: 19.5px; */
     }
 
     #BOX16>.ladi-box {
@@ -3556,7 +3555,7 @@
 
     #POPUP1 {
       width: 402px;
-      height: 400px;
+      height: 350px;
       right: 0px;
       bottom: 0px;
       margin: auto;
@@ -3569,7 +3568,7 @@
     #IMAGE50,
     #IMAGE50>.ladi-image>.ladi-image-background {
       width: 400px;
-      height: 400px;
+      height: 350px;
     }
 
     #IMAGE50 {
@@ -3601,8 +3600,38 @@
       width: 100%;
       height: 207px;
       top: 10px;
-      gap: 10px;
     }
+    /* @media (max-width: 406px) {
+      #BOX18 {
+      width: 95%;
+
+    }
+    }
+    @media (max-width: 390px) {
+      #BOX18 {
+      width: 92%;
+
+    }
+    }
+
+    @media (max-width: 380px) {
+      #BOX18 {
+      width: 90%;
+
+    }
+    }
+    @media (max-width: 370px) {
+      #BOX18 {
+      width: 86%;
+
+    }
+    }
+    @media (max-width: 360px) {
+      #BOX18 {
+      width: 84%;
+
+    }
+    } */
 
     #BOX88 {
       width: 100%;
@@ -3629,7 +3658,7 @@
       background-position: center;
       background-repeat: repeat;
       background-attachment: scroll;
-      width: 70%;
+      width: 60%;
       height: 100%;
     }
 
@@ -3977,7 +4006,7 @@
         <div id="GROUP2" class="ladi-element ladi-animation">
           <div class="ladi-group">
             <div id="HEADLINE21" class="ladi-element">
-              <p class="ladi-headline">Nhà Trai</p>
+              <p class="ladi-headline" style="color: rgb(131, 4, 13); font-weight: 600;">Nhà Trai</p>
             </div>
             <div id="HEADLINE23" class="ladi-element">
               <p class="ladi-headline">Ông: Hoàng Văn Hà</p>
@@ -3993,7 +4022,7 @@
         <div id="GROUP3" class="ladi-element ladi-animation">
           <div class="ladi-group">
             <div id="HEADLINE26" class="ladi-element">
-              <p class="ladi-headline">Nhà Gái</p>
+              <p class="ladi-headline" style="color: rgb(131, 4, 13); font-weight: 600;">Nhà Gái</p>
             </div>
             <div id="HEADLINE27" class="ladi-element">
               <p class="ladi-headline">Ông: Nguyễn Thanh Hiển</p>
@@ -4007,7 +4036,7 @@
           </div>
         </div>
         <div id="HEADLINE30" class="ladi-element ladi-animation">
-          <p class="ladi-headline">Trân trọng báo tin</p>
+          <p class="ladi-headline" style="color: rgb(131, 4, 13); font-weight: 600; padding-top: 4px;" >Trân trọng báo tin</p>
         </div>
         <div id="HEADLINE31" class="ladi-element ladi-animation">
           <p class="ladi-headline">Lễ Thành Hôn của con chúng tôi</p>
@@ -4228,65 +4257,17 @@
           </div>
         </div>
 
-        <div data-action="true" id="GROUP14" class="ladi-element ladi-animation">
-          <div class="ladi-group">
-            <div data-action="true" id="HEADLINE61" class="ladi-element">
-              <p class="ladi-headline ladi-transition">MỪNG CƯỚI<br></p>
+
+          <div data-action="true" id="GROUP14" class="ladi-element ladi-animation" >
+            <div class="ladi-group">
+              <div data-action="true" id="HEADLINE61" class="ladi-element">
+                <p class="ladi-headline ladi-transition">MỪNG CƯỚI<br></p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- <div id="HEADLINE59" class="ladi-element ladi-animation">
-          <p class="ladi-headline">Xác nhận tham dự<br></p>
-        </div>
-        <div id="HEADLINE60" class="ladi-element ladi-animation">
-          <p class="ladi-headline">Hãy xác nhận sự có mặt của bạn để chúng mình
-            <br>chuẩn bị đón tiếp một cách chu đáo nhất. Trân trọng!<br>
-          </p>
-        </div>
-        <div id="FORM2" data-config-id="6713ce28ca4f140013251c28" class="ladi-element ladi-animation">
-          <form autocomplete="off" method="post" class="ladi-form">
-            <div id="BUTTON2" class="ladi-element ladi-animation-hidden">
-              <div class="ladi-button ladi-transition">
-                <div class="ladi-button-background"></div>
-                <div id="BUTTON_TEXT2" class="ladi-element ladi-button-headline">
-                  <p class="ladi-headline ladi-transition">GỬI LỜI NHẮN VÀ XÁC NHẬN</p>
-                </div>
-              </div>
-            </div>
-            <div id="FORM_ITEM2" class="ladi-element">
-              <div class="ladi-form-item-container">
-                <div class="ladi-form-item-background"></div>
-                <div class="ladi-form-item"><input autocomplete="off" tabindex="1" name="name" required=""
-                    class="ladi-form-control" type="text" placeholder="Tên của bạn" value=""></div>
-              </div>
-            </div>
-            <div id="FORM_ITEM3" class="ladi-element">
-              <div class="ladi-form-item-container">
-                <div class="ladi-form-item-background"></div>
-                <div class="ladi-form-item"><textarea autocomplete="off" tabindex="4" name="message" required=""
-                    class="ladi-form-control" placeholder="Lời nhắn của bạn"></textarea></div>
-              </div>
-            </div>
-            <div id="FORM_ITEM4" class="ladi-element">
-              <div class="ladi-form-item-container">
-                <div class="ladi-form-item-background"></div>
-                <div class="ladi-form-item ladi-form-checkbox ladi-form-checkbox-vertical">
-                  <div class="ladi-form-checkbox-box-item">
-                    <div class="ladi-form-checkbox-item"><input tabindex="3" name="form_item4" type="radio"
-                        value="Tôi nhất định sẽ tham gia"><span data-checked="false">Tôi nhất định sẽ tham gia</span>
-                    </div>
-                    <div class="ladi-form-checkbox-item"><input tabindex="3" name="form_item4" type="radio"
-                        value="Thật tiếc tôi bận mất rồi"><span data-checked="false">Thật tiếc tôi bận mất rồi</span>
-                    </div>
-                    <div class="ladi-form-checkbox-item"><input tabindex="3" name="form_item4" type="radio"
-                        value="Tôi sẽ nhắn lại sau"><span data-checked="false">Tôi sẽ nhắn lại sau</span></div>
-                  </div>
-                </div>
-              </div>
-            </div><button type="submit" class="ladi-hidden"></button>
-          </form>
-        </div> -->
+
+  
         <div id="GROUP14" class="ladi-element">
           <div class="ladi-popup">
             <div class="ladi-popup-background"></div>
@@ -4302,14 +4283,14 @@
               </div>
             </div>
             <div id="BOX18" class="ladi-element" style="display: flex; align-items: center; justify-content: center;">
-              <div class="trandisional-box ladi-transition"></div>
-              <div class="ladi-box ladi-transition" style="background-position: 100%;"></div>
+              <div class="trandisional-box ladi-transition" style="margin-right: 10px;"></div>
+              <div class="ladi-box ladi-transition" style="background-position: 100%; margin-right: 1px;"></div>
             </div>
-            <div id="BOX18" class="ladi-element"
+            <div id="BOX18" class="ladi-element" 
               style="display: flex; align-items: center; justify-content: center; top: 240px;">
-              <div class="ladi-box ladi-transition" style="background-image: url(./img/hauhuyen1.jpg);"></div>
+              <div class="ladi-box ladi-transition" style="background-image: url(./img/hauhuyen1.jpg);margin-right: 10px;"></div>
               <div class="trandisional-box ladi-transition"
-                style="background-image: url(./img/hauhuyen2.jpg); background-position: bottom;"></div>
+                style="background-image: url(./img/hauhuyen2.jpg); background-position: bottom; margin-right: 1px;"></div>
 
             </div>
             <div id="IMAGE56" class="ladi-element">
@@ -4401,7 +4382,7 @@
               </div>
             </div>
             <div class="ladi-element"
-              style="top: 50px; display: flex; align-items: center; flex-direction: column; justify-content: center; width: 100%;">
+              style="top: 38px; display: flex; align-items: center; flex-direction: column; justify-content: center; width: 100%;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
                 
                 <div id="GROUP24">
