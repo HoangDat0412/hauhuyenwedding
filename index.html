@@ -3323,6 +3323,9 @@
       color: rgb(131, 4, 13);
       letter-spacing: 1px;
       text-align: center;
+      border: solid 1px rgb(131, 4, 13);
+      border-radius: 30px;
+      padding: 5px 10px;
     }
 
     #FORM_ITEM2 {
@@ -3382,7 +3385,7 @@
     }
 
     #HEADLINE61 {
-      top: -25px;
+      top: 480px;
       left: 91.039px;
     }
 
@@ -3595,20 +3598,42 @@
     }
 
     #BOX18 {
-      width: 283px;
+      width: 100%;
       height: 207px;
       top: 10px;
-      left: 32px;
+      gap: 10px;
+    }
+
+    #BOX88 {
+      width: 100%;
+      height: 207px;
+      top: 230px;
+      gap: 10px;
     }
 
     #BOX18>.ladi-box {
-      background-image: url("./img/banner2.jpg");
+      background-image: url("./img/aodai2.jpg");
       background-size: cover;
       background-origin: content-box;
       background-position: 50% 0%;
       background-repeat: repeat;
       background-attachment: scroll;
+      width: 30%;
+      position: unset;
     }
+
+    #BOX18>.trandisional-box {
+      background-image: url("./img/banner2.jpg");
+      background-size: cover;
+      background-origin: content-box;
+      background-position: center;
+      background-repeat: repeat;
+      background-attachment: scroll;
+      width: 70%;
+      height: 100%;
+    }
+
+
 
     #IMAGE56 {
       width: 185.795px;
@@ -3749,7 +3774,7 @@
       phamngocsonmediasound__();
     }
     const phamngocsonmedia_List = [
-      "https://camcui.vn/bai8.mp3", // i do
+      "./audio/MotDoi-VanHau-ThanhHuyen.mp3", // i do
     ];
     //Random music
     let index = Math.floor(Math.random() * phamngocsonmedia_List.length);
@@ -4095,7 +4120,7 @@
           <p class="ladi-headline">TIỆC THÂN MẬT ĐƯỢC TỔ CHỨC<br></p>
         </div>
         <div id="HEADLINE72" class="ladi-element">
-          <p class="ladi-headline">vào lúc 17:00 ngày 20.12.2024<br></p>
+          <p class="ladi-headline">vào lúc 16:00 ngày 20.12.2024<br></p>
         </div>
         <div id="IMAGE8" class="ladi-element">
           <div class="ladi-image">
@@ -4111,7 +4136,7 @@
           <div id="GROUP27" class=" ladi-animation">
             <div class="ladi-group">
               <div id="HEADLINE47" class="ladi-element">
-                <p class="ladi-headline">16:00</p>
+                <p class="ladi-headline">15:30</p>
               </div>
               <div id="HEADLINE50" class="ladi-element">
                 <p class="ladi-headline">Đón tiếp khách</p>
@@ -4126,7 +4151,7 @@
           <div id="GROUP28" class=" ladi-animation">
             <div class="ladi-group">
               <div id="HEADLINE48" class="ladi-element">
-                <p class="ladi-headline">17:00</p>
+                <p class="ladi-headline">16:00</p>
               </div>
               <div id="HEADLINE51" class="ladi-element">
                 <p class="ladi-headline">Đãi tiệc</p>
@@ -4138,21 +4163,7 @@
               </div>
             </div>
           </div>
-          <div id="GROUP29" class=" ladi-animation">
-            <div class="ladi-group">
-              <div id="IMAGE10" class="ladi-element">
-                <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
-                </div>
-              </div>
-              <div id="HEADLINE49" class="ladi-element">
-                <p class="ladi-headline">19:00</p>
-              </div>
-              <div id="HEADLINE52" class="ladi-element">
-                <p class="ladi-headline">Tiệc ngọt</p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
     </div>
@@ -4216,6 +4227,15 @@
             <div class="ladi-image-background"></div>
           </div>
         </div>
+
+        <div data-action="true" id="GROUP14" class="ladi-element ladi-animation">
+          <div class="ladi-group">
+            <div data-action="true" id="HEADLINE61" class="ladi-element">
+              <p class="ladi-headline ladi-transition">MỪNG CƯỚI<br></p>
+            </div>
+          </div>
+        </div>
+
         <!-- <div id="HEADLINE59" class="ladi-element ladi-animation">
           <p class="ladi-headline">Xác nhận tham dự<br></p>
         </div>
@@ -4268,96 +4288,41 @@
           </form>
         </div> -->
         <div id="GROUP14" class="ladi-element">
-          <div class="ladi-group">
- 
-            <div class="ladi-popup">
-              <div class="ladi-popup-background"></div>
+          <div class="ladi-popup">
+            <div class="ladi-popup-background"></div>
 
-              <div id="IMAGE50" class="ladi-element">
-                <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
-                </div>
+            <div id="IMAGE50" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
               </div>
-              <div id="IMAGE55" class="ladi-element">
-                <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
-                </div>
+            </div>
+            <div id="IMAGE55" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
               </div>
-              <div id="BOX18" class="ladi-element">
-                <div class="ladi-box ladi-transition"></div>
+            </div>
+            <div id="BOX18" class="ladi-element" style="display: flex; align-items: center; justify-content: center;">
+              <div class="trandisional-box ladi-transition"></div>
+              <div class="ladi-box ladi-transition" style="background-position: 100%;"></div>
+            </div>
+            <div id="BOX18" class="ladi-element"
+              style="display: flex; align-items: center; justify-content: center; top: 240px;">
+              <div class="ladi-box ladi-transition" style="background-image: url(./img/hauhuyen1.jpg);"></div>
+              <div class="trandisional-box ladi-transition"
+                style="background-image: url(./img/hauhuyen2.jpg); background-position: bottom;"></div>
+
+            </div>
+            <div id="IMAGE56" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
               </div>
-              <div id="IMAGE56" class="ladi-element">
-                <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
-                </div>
-              </div>
-
-              <div class="ladi-element"
-                style="top: 260px; display: flex; align-items: center; flex-direction: column; justify-content: center; width: 100%;" >
-
-                <div id="HEADLINE61" class="ladi-element" >
-                  <p class="ladi-headline">MỪNG CƯỚI<br></p>
-                </div>
-
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-                  <div id="GROUP24">
-                    <div class="ladi-group">
-                      <div id="HEADLINE68" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">cô dâu<br></p>
-                      </div>
-                      <div id="HEADLINE69" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">Nguyễn Thị Thanh Huyền</p>
-                      </div>
-                      <div id="HEADLINE70" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">Agribank<br></p>
-                      </div>
-                      <div id="HEADLINE71" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">2712205213004<br></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="IMAGE59">
-                    <div class="ladi-image">
-                      <div class="ladi-image-background"></div>
-                    </div>
-                  </div>
-
-
-                </div>
-
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
-                  <div id="GROUP24">
-                    <div class="ladi-group">
-                      <div id="HEADLINE68" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">chú rể<br></p>
-                      </div>
-                      <div id="HEADLINE69" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">Hoàng Văn Hậu</p>
-                      </div>
-                      <div id="HEADLINE70" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">BIDV<br></p>
-                      </div>
-                      <div id="HEADLINE71" class="ladi-element">
-                        <p class="ladi-headline ladi-transition">1222135085<br></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div id="IMAGE59">
-                    <div class="ladi-image">
-                      <div class="ladi-image-background ladi-image-background-b"></div>
-                    </div>
-                  </div>
+            </div>
 
 
 
-                </div>
-
-              </div>
-
-              <div id="IMAGE51" class="ladi-element">
-                <div class="ladi-image">
-                  <div class="ladi-image-background"></div>
-                </div>
+            <div id="IMAGE51" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
               </div>
             </div>
           </div>
@@ -4416,6 +4381,84 @@
           <p class="ladi-headline">Thank you!</p>
         </div>
 
+      </div>
+    </div>
+
+    <div id="SECTION_POPUP" class="ladi-section">
+      <div class="ladi-section-background"></div>
+      <div class="ladi-container">
+        <div id="POPUP1" class="ladi-element">
+          <div class="ladi-popup">
+            <div class="ladi-popup-background"></div>
+            <div id="IMAGE50" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
+              </div>
+            </div>
+            <div id="IMAGE55" class="ladi-element">
+              <div class="ladi-image">
+                <div class="ladi-image-background"></div>
+              </div>
+            </div>
+            <div class="ladi-element"
+              style="top: 50px; display: flex; align-items: center; flex-direction: column; justify-content: center; width: 100%;">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                
+                <div id="GROUP24">
+                  <div class="ladi-group">
+                    <div id="HEADLINE68" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">cô dâu<br></p>
+                    </div>
+                    <div id="HEADLINE69" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">Nguyễn Thị Thanh Huyền</p>
+                    </div>
+                    <div id="HEADLINE70" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">Agribank<br></p>
+                    </div>
+                    <div id="HEADLINE71" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">2712205213004<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="IMAGE59">
+                  <div class="ladi-image">
+                    <div class="ladi-image-background"></div>
+                  </div>
+                </div>
+
+
+              </div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 15px;">
+                <div id="GROUP24">
+                  <div class="ladi-group">
+                    <div id="HEADLINE68" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">chú rể<br></p>
+                    </div>
+                    <div id="HEADLINE69" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">Hoàng Văn Hậu</p>
+                    </div>
+                    <div id="HEADLINE70" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">BIDV<br></p>
+                    </div>
+                    <div id="HEADLINE71" class="ladi-element">
+                      <p class="ladi-headline ladi-transition">1222135085<br></p>
+                    </div>
+                  </div>
+                </div>
+                <div id="IMAGE59">
+                  <div class="ladi-image">
+                    <div class="ladi-image-background ladi-image-background-b"></div>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
 
